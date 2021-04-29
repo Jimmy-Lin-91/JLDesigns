@@ -1,3 +1,9 @@
+:root{
+  --mainText: #68A9B1;
+  --text: white;
+  --h3: 40px;
+  --h1: 64px;
+}
 *{
   padding: 0;
   margin: 0;
@@ -21,18 +27,18 @@ body{
   justify-content: center;
   align-items: center;
   width: 0;
-  visibility: hidden;
+  opacity: 0;
   overflow: hidden;
   top: 0;
   right: 0;
   background-color: rgba(157, 205, 210, .5);
   z-index: 1;
-  transition: all .75s ease;
+  transition: all 1s ease;
 }
 
 .toggler:checked ~ .nav_bar_overlay_container{
   width: 20vw;
-  visibility: visible;
+  opacity: 1;
 }
 .toggler:checked:hover + .hamburger > div {
   transform: rotate(225deg);
@@ -67,7 +73,6 @@ body{
   cursor: pointer;
   width: 50px;
   height: 50px;
-  color: red;
   opacity: 0;
 }
 input[name='toggler']:checked ~ .hamburger > div{
@@ -124,4 +129,58 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
 .github-icon{
   height: 50px;
   width: auto;
+}
+/*Home page hero text*/
+.hero_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+.hero_h1_text{
+  max-height: 68px;
+  color: var(--text);
+  font-size: var(--h1);
+  overflow: hidden;
+  animation: fadeIn 2.5s steps(68, end) .25s 1 both;
+}
+.hero_text_divOne{
+  transform: translateX(-150px);
+}
+.hero_text_divThree{
+  transform: translateX(190px);
+}
+.hero_text span{
+  display: inline;
+  font-size: var(--h1);
+  color: var(--mainText);
+  font-weight: normal;
+  animation: 3s changeColor 0s;
+}
+@keyframes changeColor{
+  0%{
+    color: var(--text);
+  }
+  100%{
+    color: var(--mainText);
+  }
+}
+ .first_h3Text, .second_h3Text {
+  overflow: hidden;
+  font-size: var(--h3);
+  color: var(--text);
+  font-weight: normal;
+}
+.first_h3Text{
+  margin-top: 10px;
+  animation: fadeIn 1.5s  1.5s 1 both;
+}
+.second_h3Text{
+  animation: fadeIn 1.5s  2.5s 1 both;
+  transform: translateY(-20px);
+}
+@keyframes fadeIn{
+  from{opacity: 0;}
+  to{opactiy: 100%;}
 }
