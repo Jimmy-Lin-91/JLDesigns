@@ -10,36 +10,17 @@ const NavBarOverlay = () => {
           <div></div>
         </div>
         <div className='nav_bar_overlay_container'>
-        <Router>
-            <nav className='menu'>
-              <ul>
-                <li>
-                  <Link className='link' to='/'>Home</Link>
-                </li>
-                <li>
-                  <Link className='link' to='/About'>About</Link>
-                </li>
-                <li>
-                  <Link className='link' to='/Projects'>Projects</Link>
-                </li>
-                <li>
-                  <a href='http://linkedin.com/in/linjimmy91' target='blank'>
-                    <AiOutlineLinkedin className='linkedin-icon'/>
-                  </a>
-                </li>
+          <ul>
             <li>
-              <a href='https://github.com/Jimmy-Lin-91' target='blank'>
-              <FiGithub className='github-icon'/>
-              </a>
+              <a className='link' href='#homepage'>Home</a>
             </li>
-              </ul>
-            </nav>
-          <Switch>
-            <Route path='/'></Route>
-            <Route path='/about'></Route>
-            <Route path='/projects'></Route>
-          </Switch>
-        </Router>
+            <li>
+              <a className='link' href='#about'>About</a>
+            </li>
+            <li>
+              <a className='link' href='#projects'>Projects</a>
+            </li>
+          </ul>
         </div>
         </div>
 
