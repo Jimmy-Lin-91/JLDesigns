@@ -8,10 +8,10 @@ const PlooberModal = ({ show, handleClose }) => {
           <div className='ploober_gif'>
           <img src="https://media.giphy.com/media/GdFAvyOJ0BsrGs82yq/giphy.gif" ></img>
           <p>React Native | MongoDB Atlas | Express | Node | Firebase | Expo </p></div>
-          <div className='ploober_description'>
-          <p>Facilitated daily stand-up between design and product team to ensure smooth production.</p>
+          <div className='project_description'>
+          <p>Passion project conceptualized on Figma and created with React Native and Expo during a week long sprint.</p>
             <br></br>
-            <p>Completed MVP within a week timefame.</p>
+            <p>Oversaw the daily standup of three other engineers to ensure a smooth production.</p>
             <br></br>
 
             <p>Used iOS geolocation and Yelp API to narrow down plumbers within a 2 mile radius of current location.</p>
@@ -23,7 +23,7 @@ const PlooberModal = ({ show, handleClose }) => {
             </a>
           </div>
         </div>
-        <div className='modal_button'>
+        <div className='modal_button_container'>
           <button onClick={handleClose}>close</button>
         </div>
         </div>

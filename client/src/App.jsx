@@ -3,7 +3,9 @@ import NavBarOverlay from './components/NavBarOverlay.jsx';
 import Burger from './components/Burger.jsx';
 import About from './components/About.jsx';
 import Projects from './components/Projects.jsx';
+import FigmaWireFrames from './components/FigmaWireFrames.jsx'
 import { Transition } from 'react-transition-group';
+import { Tracker } from 'react-tracker';
 
 const App = () => {
   return (
@@ -27,6 +29,7 @@ const App = () => {
       </div>
        <About />
        <Projects />
+       <FigmaWireFrames/>
     </div>
   )
 }

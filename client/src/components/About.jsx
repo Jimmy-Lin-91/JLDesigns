@@ -24,7 +24,8 @@ const About = () => {
         I speak equal parts Neil LeBute and Neil deGrasse Tyson. My React components are functional yet classy.
         <br></br>
         <br></br>
-        All comedy aside, I bring humanity and compassion. Any team is my team.
+        All comedy aside, I spend most of my days conceptualizing new wireframes on Figma and transferring them to code.
+        <br></br>
         <br></br>
         Hover over photo for languages!
         <br></br>
