@@ -20,6 +20,9 @@ const NavBarOverlay = () => {
             <li>
               <a className='link' href='#projects'>Projects</a>
             </li>
+            <li>
+              <a className='link' href='./photos/FrontEndRes.pdf' target='blank'>Resumé</a>
+            </li>
           </ul>
         </div>
         </div>
