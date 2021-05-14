@@ -466,6 +466,10 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   border-bottom: 1px solid var(--dblue);
   margin-bottom: 1rem;
 }
+.mail_sent_message {
+  transition: fadeIn 1s ease;
+  color: white;
+}
 /*---Media Queries---*/
 @media screen and (max-width: 1072px) {
   .logo {
