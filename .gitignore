@@ -12,7 +12,7 @@
 package-lock.json
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
-
+config.js
 # Mono auto generated files
 mono_crash.*
 

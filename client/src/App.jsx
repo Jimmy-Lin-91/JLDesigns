@@ -6,6 +6,7 @@ import Projects from './components/Projects.jsx';
 import FigmaWireFrames from './components/FigmaWireFrames.jsx'
 import { Transition } from 'react-transition-group';
 import { Tracker } from 'react-tracker';
+import Contact from './components/Contact.jsx';
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
        <About />
        <Projects />
        <FigmaWireFrames/>
+       <Contact/>
     </div>
   )
 }

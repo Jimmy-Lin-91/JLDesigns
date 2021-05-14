@@ -32,7 +32,7 @@ const config = {
                 use: ['style-loader', 'css-loader', 'sass-loader']
             },
             {
-                test: /\.(png|jp(e*)g|svg|gif)$/,
+                test: /\.(png|jp(e*)g|svg|gif|pdf)$/,
                 use: [
                     {
                         loader: 'file-loader',

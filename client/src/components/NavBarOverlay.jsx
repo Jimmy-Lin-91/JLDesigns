@@ -2,6 +2,7 @@ import React from 'react'
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import { FiGithub } from 'react-icons/fi';
+import Pdfile from '../../dist/FrontEndRes.pdf';
 const NavBarOverlay = () => {
     return (
       <div className='menu_container' >
@@ -21,7 +22,10 @@ const NavBarOverlay = () => {
               <a className='link' href='#projects'>Projects</a>
             </li>
             <li>
-              <a className='link' href='./photos/FrontEndRes.pdf' target='blank'>Resumé</a>
+              <a className='link' href='https://drive.google.com/file/d/1lXiLRiMM9bwJUCOO0JeIOP0esQ9d8Ej7/view?usp=sharing' target='blank'>Resumé</a>
+            </li>
+            <li>
+              <a className='link' href='#contact'>Contact</a>
             </li>
           </ul>
         </div>

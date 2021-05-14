@@ -249,7 +249,7 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   height: 50vh;
   border-radius: 20px;
 }
-.about_container h1, .projects_container h1, .wireframes_container h1{
+.about_container h1, .projects_container h1, .wireframes_container h1, .contact_container h1{
   display: flex;
   flex-direction: column;
   font-size: 72px;
@@ -258,6 +258,9 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   margin-bottom: 20px;
   text-align: center;
   box-shadow: 0px 5px 0px var(--dblue2);
+}
+.projects_container h1 {
+  box-shadow: none;
 }
 .about_container p {
   display: block;
@@ -434,6 +437,35 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   border: 2px solid var(--dblue2);
 }
 
+/*---Contact---*/
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact_form {
+  width: 40vw;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.contact_form .input_group1,.contact_form .submit_button, .input_group2 {
+  width: 100%;
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid var(--dblue);
+}
+.contact_form .submit_button {
+  text-align: center;
+}
+.contact_form .input_group2 {
+  height: 200px;
+  border: none;
+  border-bottom: 1px solid var(--dblue);
+  margin-bottom: 1rem;
+}
 /*---Media Queries---*/
 @media screen and (max-width: 1072px) {
   .logo {
