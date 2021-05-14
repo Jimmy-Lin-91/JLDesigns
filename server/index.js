@@ -1,5 +1,4 @@
 const express = require('express');
-const apiKey = require('../config.json');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
 const bodyparser = require('body-parser')
