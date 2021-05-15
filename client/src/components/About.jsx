@@ -10,8 +10,14 @@ const About = () => {
         <img className='photo' src='./photos/photo.png'></img>
 
         <div className='hover_container'>
-        <p className='quote'>Front End: React | CSS | HTML </p>
-        <p className='quote'>Back End: MongoDB | PosgreSQL | Express | Node</p>
+        <p className='quote'>Front End:
+        <br></br>
+        <br></br>
+        React  CSS  HTML </p>
+        <p className='quote'>Back End:
+        <br></br>
+        <br></br>
+        MongoDB  PosgreSQL  Express  Node</p>
         </div>
       </div>
         <div className='home_text'>

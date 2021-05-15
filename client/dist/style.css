@@ -302,7 +302,7 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
 
 /*--- Projects ----*/
 /*--- Ploober  ----*/
-.projects_ploober_container, .projects_rei_container, .projects_redstore_container {
+.projects_ploober_container, .projects_redstore_container {
   position: fixed;
   left: 0;
   display: flex;
@@ -528,6 +528,18 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   }
   .nav_bar_overlay_container{
     padding: 1rem;
+  }
+  .nav_bar_overlay_container a {
+    font-size: 40px;
+  }
+  .photo {
+    display: none;
+  }
+  .about_inner_container:hover  .hover_container {
+    opacity: 100%;
+  }
+  .hover_container {
+    width: 250px;
   }
   .about_container p {
     font-size: 16px;
