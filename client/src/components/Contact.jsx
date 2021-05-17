@@ -1,6 +1,6 @@
 import React from 'react';
 import Axios from 'axios';
-
+import SendingGif from './SendingGif.jsx';
 class Contact extends React.Component {
   constructor(){
     super(),
@@ -9,6 +9,7 @@ class Contact extends React.Component {
       email: '',
       subject: '',
       message: '',
+      sending: false,
       emailSend: false,
     }
     this.handleEmail = this.handleEmail.bind(this);
@@ -16,12 +17,16 @@ class Contact extends React.Component {
   }
   handleEmail(e) {
     e.preventDefault();
+    this.setState({
+      sending: true
+    });
     Axios.post('https://linsanity.herokuapp.com/email', this.state)
     .then(res => {
       if (res.data.success) {
         this.setState({
           emailSend: true,
-          disabled: true
+          disabled: true,
+          sending: false
         })
       }
     })
@@ -51,10 +56,11 @@ class Contact extends React.Component {
               <label>Subject</label>
               <input className='input_group1' onChange={this.handleChange} name='subject' ></input>
               <label>Message</label>
-              <textarea className='input_group2' onChange={this.handleChange} name='message' placeholder='How can I help today?'></textarea>
+              <textarea className='input_group2' onChange={this.handleChange} name='message' placeholder='Message'></textarea>
               <input className='submit_button' type='submit' value='Submit'></input>
             </form>
           </div>
+            {this.state.sending ? <SendingGif/> : null}
         </div>
       )
     } else {

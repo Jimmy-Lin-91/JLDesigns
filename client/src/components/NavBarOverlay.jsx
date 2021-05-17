@@ -19,13 +19,13 @@ const NavBarOverlay = () => {
               <a className='link' href='#about'>About</a>
             </li>
             <li>
-              <a className='link' href='#projects'>Projects</a>
+              <a className='link' id='project_overlay_button' href='#projects'>Projects</a>
             </li>
             <li>
-              <a className='link' href='https://drive.google.com/file/d/1lXiLRiMM9bwJUCOO0JeIOP0esQ9d8Ej7/view?usp=sharing' target='blank'>Resumé</a>
+              <a className='link' id='resume_overlay_button' href='https://drive.google.com/file/d/1lXiLRiMM9bwJUCOO0JeIOP0esQ9d8Ej7/view?usp=sharing' target='blank'>Resumé</a>
             </li>
             <li>
-              <a className='link' href='#contact'>Contact</a>
+              <a className='link' id='contact_overlay_button' href='#contact'>Contact</a>
             </li>
           </ul>
         </div>

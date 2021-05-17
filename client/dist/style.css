@@ -9,7 +9,6 @@
 }
 html{
   scroll-behavior: smooth;
-  margin-bottom: 100px;
 }
 *{
   padding: 0;
@@ -22,7 +21,11 @@ html{
   align-items: center;
   justify-content: center;
   width: 100vw;
+  max-width: 100%;
   height: auto;
+}
+.direct_link {
+  display: none;
 }
 body{
   background-image: linear-gradient(0deg, rgba(101, 126, 190, 0.3), rgba(101, 126, 190, 0.3)), url('./photos/background.png');
@@ -334,6 +337,7 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   align-content: center;
   background-color: var(--dblue);
   padding: 2rem;
+  z-index: 5;
   border-radius: 10px;
   border: 1px solid var(--dblue2);
   box-shadow: 5px 5px 5px black;
@@ -445,13 +449,12 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
 }
 .contact_form {
   width: 40vw;
-  padding: 2rem;
   background-color: white;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
 }
-.contact_form .input_group1,.contact_form .submit_button, .input_group2 {
+.input_group1,.submit_button, .input_group2 {
   width: 100%;
   margin-bottom: 1rem;
   border: none;
@@ -461,17 +464,36 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   text-align: center;
 }
 .contact_form .input_group2 {
-  height: 200px;
+  height: auto;
   border: none;
   border-bottom: 1px solid var(--dblue);
   margin-bottom: 1rem;
 }
+
 .mail_sent_message {
   transition: fadeIn 1s ease;
   color: white;
 }
+.contact_form form {
+  padding: 1rem;
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  margin-top: 1rem;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /*---Media Queries---*/
-@media screen and (max-width: 1072px) {
+@media screen and (max-width: 1124px) {
   .logo {
     width: 200px;
     height: auto;
@@ -500,9 +522,15 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
     font-size: 16px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+  body{
+    margin: 1rem;
+  }
+  .homepage_container {
+    padding: 0;
+  }
   .logo {
-    width: 200px;
+    width: 150px;
     height: auto;
   }
   .hero_h1_text{
@@ -543,5 +571,65 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   }
   .about_container p {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .nav_bar_overlay_container a {
+    font-size: 20px;
+  }
+  .hero_h1_text {
+    transform: translateX(150px);
+  }
+  .hero_text_divTwo {
+    transform: translateX(9px);
+  }
+  .hero_text_divThree {
+    transform: translateX(10px);
+  }
+  .about_container, .contact_container {
+    position: relative;
+    top: -250px;
+  }
+  .home_text {
+    margin: 0;
+  }
+  .about_container h1, .projects_container h1, .wireframes_container h1, .contact_container h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 48px;
+    padding: 1rem;
+    color: var(--text);
+    text-align: center;
+    box-shadow: 0px 5px 0px var(--dblue2);
+  }
+  .projects_container {
+    margin-top: 3rem;
+  }
+  .wireframes_container {
+    display: none;
+  }
+  .contact_container label {
+    font-size: 20px;
+  }
+  .loader {
+    width: 30px;
+    height: 30px;
+  }
+  .profile_container {
+    padding: 0;
+  }
+  .projects_container {
+    display: none;
+  }
+  .contact_container {
+    margin-top: 2rem;
+  }
+  #project_overlay_button {
+    display: none;
+  }
+  #resume_overlay_button, #contact_overlay_button {
+    position: relative;
+    top: -50px;
   }
 }

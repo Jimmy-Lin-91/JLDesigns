@@ -11,12 +11,10 @@ const About = () => {
 
         <div className='hover_container'>
         <p className='quote'>Front End:
-        <br></br>
-        <br></br>
         React  CSS  HTML </p>
+        <br></br>
+        <br></br>
         <p className='quote'>Back End:
-        <br></br>
-        <br></br>
         MongoDB  PosgreSQL  Express  Node</p>
         </div>
       </div>
@@ -33,7 +31,7 @@ const About = () => {
         All comedy aside, I spend most of my days conceptualizing new wireframes on Figma and transferring them to code.
         <br></br>
         <br></br>
-        Hover over photo for languages!
+        Hover over for languages!
         <br></br>
           <a href="https://github.com/Jimmy-Lin-91" target="blank">
             <FiGithub className="icon"/>
