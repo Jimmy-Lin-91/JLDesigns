@@ -45,7 +45,6 @@ body{
   height: 100vh;
   flex-direction: column;
   position: fixed;
-  justify-content: center;
   align-items: center;
   width: 0;
   opacity: 0;
@@ -59,22 +58,21 @@ body{
 }
 
 .toggler:checked ~ .nav_bar_overlay_container{
-  width: auto;
+  width: 200px;
   opacity: 1;
 }
 .toggler:checked:hover + .hamburger > div {
   transform: rotate(225deg);
 }
-.nav_bar_overlay_container li{
-  visibility: hidden;
-}
+
 .toggler:checked ~ .nav_bar_overlay_container li{
   visibility: visible;
-  transition-duration: 0.75;
+  transition-duration: .75s;
 }
 
 .nav_bar_overlay_container ul{
   list-style: none;
+  margin-top: 8rem;
 }
 .nav_bar_overlay_container ul li{
   padding-top: 40px;
@@ -450,13 +448,15 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: transparent;
 }
 .contact_form {
   width: 40vw;
-  background-color: white;
+  background-color:var(--dblue);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  padding: 2rem;
 }
 .input_group1,.submit_button, .input_group2 {
   width: 100%;
@@ -523,7 +523,7 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
     padding: 22px;
   }
   .toggler:checked ~ .nav_bar_overlay_container{
-    width: auto;
+    width: 150px;
     opacity: 1;
   }
   .about_container p {
@@ -566,7 +566,7 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
     padding: 22px;
   }
   .toggler:checked ~ .nav_bar_overlay_container{
-    width: auto;
+    width: 100px;
     opacity: 1;
   }
   .nav_bar_overlay_container a {
@@ -591,8 +591,23 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
     display: none;
   }
   .toggler:checked ~ .nav_bar_overlay_container{
-    width: 100px;
+    width: 75px;
     opacity: 1;
+  }
+  .hamburger, .toggler {
+    height: 30px;
+    width: 30px;
+  }
+  .hamburger div:before, .hamburger div:after{
+    position: absolute;
+    content: '';
+    top: -10px;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+  }
+  .hamburger div:after{
+    top: 10px;
   }
   .nav_bar_overlay_icons {
     display: block;
@@ -620,9 +635,10 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   .about_container, .contact_container {
     position: relative;
     top: -250px;
+    display: block;
   }
   .contact_container {
-    top: -180px;
+    top: -150px;
   }
   .home_text {
     margin: 0;
