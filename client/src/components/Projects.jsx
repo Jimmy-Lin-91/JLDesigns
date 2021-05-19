@@ -3,6 +3,7 @@ import PlooberModal from './PlooberModal.jsx';
 import RedStoreModal from './RedStoreModal.jsx';
 import { FiGithub } from 'react-icons/fi';
 import FigmaWireFrames from './FigmaWireFrames.jsx';
+
 class Projects extends React.Component {
   constructor(props){
     super(props),

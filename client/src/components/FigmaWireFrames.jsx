@@ -3,7 +3,7 @@ import React from 'react'
 const FigmaWireFrames = ({ show, handleClose }) => {
     return (
       <div className='wireframes_container' id='wireframes'>
-        <h1>Figma Wireframes</h1>
+        <h1>Designs and Clients</h1>
         <div className='wireframes_outer_container'>
           <div classname='wireframes_inner_container'>
             <div className='wireframe_style1'>

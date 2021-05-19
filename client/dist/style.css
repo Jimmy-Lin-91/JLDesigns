@@ -55,10 +55,11 @@ body{
   background-color: var(--dblue2);
   z-index: 1;
   transition: all 1s ease;
+  padding: 2rem;
 }
 
 .toggler:checked ~ .nav_bar_overlay_container{
-  width: 20vw;
+  width: auto;
   opacity: 1;
 }
 .toggler:checked:hover + .hamburger > div {
@@ -78,10 +79,13 @@ body{
 .nav_bar_overlay_container ul li{
   padding-top: 40px;
 }
+.nav_bar_overlay_icons {
+  display: none;
+}
 .link{
   text-decoration: none;
   color: white;
-  font-size: 64px;
+  font-size: 48px;
 }
 .toggler, .hamburger{
   margin: 50px;
@@ -516,13 +520,17 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
     right: 0;
   }
   .nav_bar_overlay_container{
-    padding: 1rem;
+    padding: 22px;
+  }
+  .toggler:checked ~ .nav_bar_overlay_container{
+    width: auto;
+    opacity: 1;
   }
   .about_container p {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   body{
     margin: 1rem;
   }
@@ -555,10 +563,14 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
     right: 0;
   }
   .nav_bar_overlay_container{
-    padding: 1rem;
+    padding: 22px;
+  }
+  .toggler:checked ~ .nav_bar_overlay_container{
+    width: auto;
+    opacity: 1;
   }
   .nav_bar_overlay_container a {
-    font-size: 40px;
+    font-size: 32px;
   }
   .photo {
     display: none;
@@ -575,8 +587,26 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
 }
 
 @media screen and (max-width: 420px) {
-  .nav_bar_overlay_container a {
-    font-size: 20px;
+  .link {
+    display: none;
+  }
+  .toggler:checked ~ .nav_bar_overlay_container{
+    width: 100px;
+    opacity: 1;
+  }
+  .nav_bar_overlay_icons {
+    display: block;
+    width: 50px;
+    height: auto;
+    color: white;
+  }
+  .resume, .email{
+    position: relative;
+    top: -2rem;
+  }
+
+  .nav_bar_overlay_container .link {
+    display: none;
   }
   .hero_h1_text {
     transform: translateX(150px);
@@ -590,6 +620,9 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   .about_container, .contact_container {
     position: relative;
     top: -250px;
+  }
+  .contact_container {
+    top: -180px;
   }
   .home_text {
     margin: 0;
@@ -631,5 +664,9 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   #resume_overlay_button, #contact_overlay_button {
     position: relative;
     top: -50px;
+  }
+  .mail_sent_message {
+    font-size: 20px;
+    margin: 1rem;
   }
 }
