@@ -56,7 +56,7 @@ class Contact extends React.Component {
               <label>Subject</label>
               <input className='input_group1' onChange={this.handleChange} name='subject' ></input>
               <label>Message</label>
-              <textarea className='input_group2' onChange={this.handleChange} name='message' placeholder='Message'></textarea>
+              <textarea className='input_group2' onChange={this.handleChange} name='message' placeholder='What can I do for you today?'></textarea>
               <input className='submit_button' type='submit' value='Submit'></input>
             </form>
           </div>
