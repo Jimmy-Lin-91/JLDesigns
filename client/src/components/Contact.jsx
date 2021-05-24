@@ -47,7 +47,7 @@ class Contact extends React.Component {
       return (
         <div className='contact_container' id='contact'>
           <h1>Contact</h1>
-          <div className='contact_form'>
+          <div className='contact_form_container'>
             <form onSubmit={this.handleEmail}>
               <label>Full Name</label>
               <input className='input_group1' onChange={this.handleChange}name='name' ></input>
