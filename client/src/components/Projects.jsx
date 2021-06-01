@@ -3,6 +3,7 @@ import PlooberModal from './PlooberModal.jsx';
 import RedStoreModal from './RedStoreModal.jsx';
 import { FiGithub } from 'react-icons/fi';
 import FigmaWireFrames from './FigmaWireFrames.jsx';
+import Morpheus from './Morpheus.jsx';
 
 class Projects extends React.Component {
   constructor(props){
@@ -30,9 +31,11 @@ class Projects extends React.Component {
       <div>
         <button className='btn' onClick={this.handleClick} value='ploober'>Ploober</button>
         <button className='btn' onClick={this.handleClick}value='redstore'>RedStore Merch</button>
+        <button className='btn' onClick={this.handleClick}value='morpheus'>Morpheus</button>
       </div>
       {this.state.show === 'ploober' ?<PlooberModal show={this.state.show} handleClose={this.handleClose}/> : null}
       {this.state.show === 'redstore' ? <RedStoreModal show={this.state.show} handleClose={this.handleClose}/> : null}
+      {this.state.show === 'morpheus' ? <Morpheus show={this.state.show} handleClose={this.handleClose}/> : null}
     </div>
     )
   }

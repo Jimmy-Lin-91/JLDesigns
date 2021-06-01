@@ -307,7 +307,7 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
 
 /*--- Projects ----*/
 /*--- Ploober  ----*/
-.projects_ploober_container, .projects_redstore_container {
+.projects_ploober_container, .projects_redstore_container, .projects_morpheus_container {
   position: fixed;
   left: 0;
   display: flex;
@@ -324,6 +324,9 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
 .ploober_gif {
   display: flex;
   flex-direction: row;
+}
+.ploober_gif img {
+  box-shadow: 2px 2px 2px 2px black;
 }
 .ploober_gif p {
   font-size: 20px;
@@ -365,6 +368,12 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   color: white;
   font-size: 20px;
 }
+.projects_container .btn:hover {
+  cursor: pointer;
+}
+.modal_button_container button:hover{
+  cursor: pointer;
+}
 .projects_container h1 {
   text-align: center;
   padding: 5px;
@@ -375,12 +384,18 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
 /*---RedStore Merch---*/
 .carousel_container {
   overflow: scroll;
-  height: 270px;
+  height: 220px;
   width: 480px;
   display: flex;
   flex-direction: row;
+  box-shadow: 2px 2px 2px 2px black;
+  background-color: black;
+  align-items: center;
 }
-
+.projects_morpheus_img {
+  width: 480px;
+  height: auto;
+}
 .redstore_carousel_img {
   width: 480px;
   height: 220px;
@@ -455,28 +470,28 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   width: 40vw;
   background-color:var(--dblue);
   border-radius: 10px;
-  padding: 2rem;
 }
-.contact_form_container label {
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
+.contact_form_container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  padding: 10px;
 }
 .input_group1, .input_group2 {
-  height: 2rem;
-  margin: 8px 0px;
+  padding: 10px;
 }
-.input_group1,.submit_button, .input_group2 {
-  width: 100%;
+.submit_button {
+  border: none;
+}
+.input_group1, .input_group2 {
+  width: 80%;
   flex: 1;
   margin-bottom: 1rem;
   border: none;
   background-color: rgba(255, 255, 255, .5);
   border-bottom: 5px solid var(--text);
-}
-
-.submit_button {
-  border-bottom: none;
 }
 .contact_form_container .submit_button {
   text-align: center;
@@ -660,7 +675,7 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   .home_text {
     margin: 0;
   }
-  .about_container h1, .projects_container h1, .wireframes_container h1, .contact_container h1{
+  .about_container h1, .projects_container h1, .wireframes_container h1, .contact_container h1 {
     display: flex;
     flex-direction: column;
     font-size: 48px;

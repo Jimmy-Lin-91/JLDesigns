@@ -49,14 +49,9 @@ class Contact extends React.Component {
           <h1>Contact</h1>
           <div className='contact_form_container'>
             <form onSubmit={this.handleEmail}>
-              <label>Full Name</label>
-              <input className='input_group1' onChange={this.handleChange}name='name' ></input>
-              <label>Email</label>
-              <input className='input_group1' onChange={this.handleChange} name='email' ></input>
-              <label>Subject</label>
-              <input className='input_group1' onChange={this.handleChange} name='subject' ></input>
-              <label>Message</label>
-              <textarea className='input_group2' onChange={this.handleChange} name='message' placeholder='What can I do for you today?'></textarea>
+              <input className='input_group1' onChange={this.handleChange}name='name' placeholder='Name'></input>
+              <input className='input_group1' onChange={this.handleChange} name='email' placeholder='Email'></input>
+              <textarea className='input_group2' onChange={this.handleChange} name='message'></textarea>
               <input className='submit_button' type='submit' value='Submit'></input>
             </form>
           </div>
