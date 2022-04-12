@@ -8,27 +8,24 @@ const FigmaWireFrames = ({ show, handleClose }) => {
           <div classname='wireframes_inner_container'>
             <div className='wireframe_style1'>
               <div className='wireframe_style1_col-1'>
-                <p>BB Communications</p>
-                <img src='./photos/BBMaster.jpg'></img>
-                <div className='wireframe_style1_text'>
-              </div>
-              </div>
-              <div className='wireframe_style1_col-2'>
-                <img src='./photos/BBFull.jpg'></img>
+                <p>VEDA</p>
+                <iframe
+                width="500"
+                height="300"
+                src="https://youtube.com/embed/df9Rm2FxvX4"/>
               </div>
             </div>
           </div>
           <div classname='wireframes_inner_container'>
             <div className='wireframe_style1'>
               <div className='wireframe_style1_col-1'>
-                <p>Actor's Page</p>
-                <img src='./photos/AWMain.jpg'></img>
-                <div className='wireframe_style1_text'>
+                <p>Me In Te</p>
+                <iframe
+                width="500"
+                height="300"
+                src="https://youtube.com/embed/frGH65vhqdM"/>
               </div>
-              </div>
-              <div className='wireframe_style1_col-2'>
-                <img src='./photos/AWFull.jpg'></img>
-              </div>
+
             </div>
           </div>
 

@@ -1,21 +1,21 @@
-:root{
-  --mainText: #68A9B1;
+:root {
+  --mainText: #68a9b1;
   --text: white;
   --h3: 40px;
   --h1: 64px;
   --dblue: #0e75b9e7;
   --dblue2: #020a5faf;
-  --btncolor: #56A9E1;
+  --btncolor: #56a9e1;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-*{
+* {
   padding: 0;
   margin: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
-.omega_container{
+.omega_container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,14 +27,19 @@ html{
 .direct_link {
   display: none;
 }
-body{
-  background-image: linear-gradient(0deg, rgba(101, 126, 190, 0.3), rgba(101, 126, 190, 0.3)), url('./photos/background.png');
+body {
+  background-image: linear-gradient(
+      0deg,
+      rgba(101, 126, 190, 0.3),
+      rgba(101, 126, 190, 0.3)
+    ),
+    url("./photos/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 /*----Home Container -----*/
-.homepage_container{
+.homepage_container {
   width: 100%;
   height: 100vh;
   padding: 50px;
@@ -57,7 +62,7 @@ body{
   padding: 2rem;
 }
 
-.toggler:checked ~ .nav_bar_overlay_container{
+.toggler:checked ~ .nav_bar_overlay_container {
   width: 200px;
   opacity: 1;
 }
@@ -65,33 +70,34 @@ body{
   transform: rotate(225deg);
 }
 
-.toggler:checked ~ .nav_bar_overlay_container li{
+.toggler:checked ~ .nav_bar_overlay_container li {
   visibility: visible;
-  transition-duration: .75s;
+  transition-duration: 0.75s;
 }
 
-.nav_bar_overlay_container ul{
+.nav_bar_overlay_container ul {
   list-style: none;
   margin-top: 8rem;
 }
-.nav_bar_overlay_container ul li{
+.nav_bar_overlay_container ul li {
   padding-top: 40px;
 }
 .nav_bar_overlay_icons {
   display: none;
 }
-.link{
+.link {
   text-decoration: none;
   color: white;
   font-size: 48px;
 }
-.toggler, .hamburger{
+.toggler,
+.hamburger {
   margin: 50px;
   position: absolute;
   top: 0;
   right: 0;
 }
-.toggler{
+.toggler {
   z-index: 5;
   cursor: pointer;
   width: 50px;
@@ -99,15 +105,16 @@ body{
   opacity: 0;
   position: fixed;
 }
-input[name='toggler']:checked ~ .hamburger > div{
+input[name="toggler"]:checked ~ .hamburger > div {
   transform: rotate(135deg);
 }
-input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:checked ~ .hamburger > div:after{
+input[name="toggler"]:checked ~ .hamburger > div:before,
+input[name="toggler"]:checked ~ .hamburger > div:after {
   top: 0;
   transform: rotate(90deg);
 }
 /*---Hamburger---*/
-.hamburger{
+.hamburger {
   position: fixed;
   top: 0;
   right: 0;
@@ -129,21 +136,22 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   justify-content: center;
   transition: all 0.4s ease;
 }
-.hamburger div:before, .hamburger div:after{
+.hamburger div:before,
+.hamburger div:after {
   position: absolute;
-  content: '';
+  content: "";
   top: -20px;
   width: 100%;
   height: 5px;
   background-color: white;
 }
-.hamburger div:after{
+.hamburger div:after {
   top: 20px;
 }
-.hamburger:hover{
+.hamburger:hover {
   cursor: pointer;
 }
-.logo{
+.logo {
   padding-left: 70px;
 }
 
@@ -151,75 +159,82 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   height: 50px;
   width: auto;
 }
-.github-icon{
+.github-icon {
   height: 50px;
   width: auto;
 }
 /*Home page hero text*/
-.hero_text{
+.hero_text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 10vh;
 }
-.hero_h1_text{
+.hero_h1_text {
   max-height: 68px;
   font-size: 64px;
   color: var(--text);
   font-size: var(--h1);
   overflow: hidden;
-  animation: fadeIn 2.5s steps(68, end) .25s 1 both;
+  animation: fadeIn 2.5s steps(68, end) 0.25s 1 both;
 }
-.hero_text_divOne{
+.hero_text_divOne {
   transform: translateX(-150px);
 }
-.hero_text_divTwo{
+.hero_text_divTwo {
   transform: translateX(100px);
 }
-.hero_text_divThree{
+.hero_text_divThree {
   margin-top: 10px;
   transform: translateX(220px);
 }
-.first_h3Text, .second_h3Text {
+.first_h3Text,
+.second_h3Text {
   font-size: 48px;
 }
-.hero_text span{
+.hero_text span {
   display: inline;
   font-size: var(--h1);
   color: var(--mainText);
   font-weight: normal;
   animation: 3s changeColor 0s;
 }
-@keyframes changeColor{
-  0%{
+@keyframes changeColor {
+  0% {
     color: var(--text);
   }
-  100%{
+  100% {
     color: var(--mainText);
   }
 }
-.first_h3Text, .second_h3Text {
+.first_h3Text,
+.second_h3Text {
   overflow: hidden;
   font-size: var(--h3);
   color: var(--text);
   font-weight: normal;
 }
-.first_h3Text{
+.first_h3Text {
   margin-top: 10px;
-  animation: fadeIn 1.5s  1.5s 1 both;
+  animation: fadeIn 1.5s 1.5s 1 both;
 }
-.second_h3Text{
-  animation: fadeIn 1.5s  2.5s 1 both;
+.second_h3Text {
+  animation: fadeIn 1.5s 2.5s 1 both;
   transform: translateY(-20px);
 }
-@keyframes fadeIn{
-  from{opacity: 0;}
-  to{opactiy: 100%;}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opactiy: 100%;
+  }
 }
 
 /*---About---*/
-.about_container, .projects_container {
+.about_container,
+.projects_container {
   width: auto;
   max-height: 800px;
   display: flex;
@@ -239,7 +254,7 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   background-color: var(--dblue);
   border-radius: 20px;
 }
-.profile_container{
+.profile_container {
   position: relative;
   display: flex;
   padding: 20px;
@@ -254,7 +269,10 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   height: 50vh;
   border-radius: 20px;
 }
-.about_container h1, .projects_container h1, .wireframes_container h1, .contact_container h1{
+.about_container h1,
+.projects_container h1,
+.wireframes_container h1,
+.contact_container h1 {
   display: flex;
   flex-direction: column;
   font-size: 72px;
@@ -273,7 +291,7 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   color: var(--text);
   padding-top: 10px;
   font-size: 24px;
-  max-width:30vw;
+  max-width: 30vw;
   margin-left: 20px;
 }
 .home_text {
@@ -281,20 +299,19 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   padding: 1rem;
 }
 
-
 .hover_container {
   position: absolute;
   width: 100%;
   padding: 1.4rem;
-  background-color:var(--dblue2);
+  background-color: var(--dblue2);
   border-radius: 20px;
   opacity: 0;
   transition: all 1s ease;
 }
-.profile_container:hover  .hover_container {
+.profile_container:hover .hover_container {
   opacity: 100%;
 }
-.hover_container p{
+.hover_container p {
   text-align: center;
   color: var(--text);
 }
@@ -307,7 +324,9 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
 
 /*--- Projects ----*/
 /*--- Ploober  ----*/
-.projects_ploober_container, .projects_redstore_container, .projects_morpheus_container {
+.projects_ploober_container,
+.projects_redstore_container,
+.projects_morpheus_container {
   position: fixed;
   left: 0;
   display: flex;
@@ -350,7 +369,7 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
 
 .project_description {
   margin-top: 1rem;
-  background-color:rgba(192, 192, 192, 0.411);
+  background-color: rgba(192, 192, 192, 0.411);
   padding: 1rem;
   border: 1px solid white;
 }
@@ -358,7 +377,8 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   color: white;
   font-size: 20px;
 }
-.projects_container .btn, .modal_button_container button {
+.projects_container .btn,
+.modal_button_container button {
   border: solid white 2px;
   margin: 5px;
   width: 150px;
@@ -371,7 +391,7 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
 .projects_container .btn:hover {
   cursor: pointer;
 }
-.modal_button_container button:hover{
+.modal_button_container button:hover {
   cursor: pointer;
 }
 .projects_container h1 {
@@ -422,22 +442,25 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
 .wireframes_inner_container {
   background-color: var(--dblue);
 }
-.wireframe_style1{
+.wireframe_style1 {
   display: flex;
-  width: 50vw;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--dblue2);
-  padding: 2rem;
-  background-color: var(--dblue);
   margin-bottom: 2rem;
+}
+.wireframe_style1_col-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .wireframe_style1_col-1 > p {
   color: var(--text);
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 2rem;
+  background-color: var(--dblue2);
+  width: 4rem;
 }
 .wireframe_style1_col-1 img {
   width: 25vw;
@@ -452,7 +475,7 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   overflow: scroll;
   margin-top: 2rem;
 }
-.wireframe_style1_col-2 img{
+.wireframe_style1_col-2 img {
   height: 40vh;
   width: auto;
   border: 2px solid var(--dblue2);
@@ -468,7 +491,7 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
 }
 .contact_form_container {
   width: 40vw;
-  background-color:var(--dblue);
+  background-color: var(--dblue);
   border-radius: 10px;
 }
 .contact_form_container form {
@@ -479,23 +502,25 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   margin: 30px;
   padding: 10px;
 }
-.input_group1, .input_group2 {
+.input_group1,
+.input_group2 {
   padding: 10px;
 }
 .submit_button {
   border: none;
 }
-.input_group1, .input_group2 {
+.input_group1,
+.input_group2 {
   width: 80%;
   flex: 1;
   margin-bottom: 1rem;
   border: none;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, 0.5);
   border-bottom: 5px solid var(--text);
 }
 .contact_form_container .submit_button {
   text-align: center;
-  background-color: rgba(255, 255, 255, .75);
+  background-color: rgba(255, 255, 255, 0.75);
   height: 2rem;
   font-size: 1rem;
   width: 50%;
@@ -524,8 +549,12 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*---Media Queries---*/
@@ -534,27 +563,28 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
     width: 200px;
     height: auto;
   }
-  .hero_h1_text{
+  .hero_h1_text {
     margin: 0;
     font-size: 30px;
   }
-  .first_h3Text{
+  .first_h3Text {
     margin-top: 1rem;
     font-size: 30px;
   }
-  .second_h3Text{
+  .second_h3Text {
     margin: 0;
     font-size: 30px;
   }
-  .toggler, .hamburger {
+  .toggler,
+  .hamburger {
     position: fixed;
     top: 0;
     right: 0;
   }
-  .nav_bar_overlay_container{
+  .nav_bar_overlay_container {
     padding: 22px;
   }
-  .toggler:checked ~ .nav_bar_overlay_container{
+  .toggler:checked ~ .nav_bar_overlay_container {
     width: 150px;
     opacity: 1;
   }
@@ -563,7 +593,7 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   }
 }
 @media screen and (max-width: 900px) {
-  body{
+  body {
     margin: 1rem;
   }
   .homepage_container {
@@ -573,31 +603,32 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
     width: 150px;
     height: auto;
   }
-  .hero_h1_text{
+  .hero_h1_text {
     margin: 0;
     font-size: 20px;
     transform: translateX(75px);
   }
-  .first_h3Text{
+  .first_h3Text {
     margin-top: 1rem;
     font-size: 20px;
     margin-top: 1rem;
   }
-  .second_h3Text{
+  .second_h3Text {
     margin: 0;
     font-size: 20px;
     transform: translateX(-5rem);
     transform: translateY(-1rem);
   }
-  .toggler, .hamburger {
+  .toggler,
+  .hamburger {
     position: fixed;
     top: 0;
     right: 0;
   }
-  .nav_bar_overlay_container{
+  .nav_bar_overlay_container {
     padding: 22px;
   }
-  .toggler:checked ~ .nav_bar_overlay_container{
+  .toggler:checked ~ .nav_bar_overlay_container {
     width: 100px;
     opacity: 1;
   }
@@ -607,7 +638,7 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   .photo {
     display: none;
   }
-  .about_inner_container:hover  .hover_container {
+  .about_inner_container:hover .hover_container {
     opacity: 100%;
   }
   .hover_container {
@@ -622,23 +653,25 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   .link {
     display: none;
   }
-  .toggler:checked ~ .nav_bar_overlay_container{
+  .toggler:checked ~ .nav_bar_overlay_container {
     width: 75px;
     opacity: 1;
   }
-  .hamburger, .toggler {
+  .hamburger,
+  .toggler {
     height: 30px;
     width: 30px;
   }
-  .hamburger div:before, .hamburger div:after{
+  .hamburger div:before,
+  .hamburger div:after {
     position: absolute;
-    content: '';
+    content: "";
     top: -10px;
     width: 100%;
     height: 5px;
     background-color: white;
   }
-  .hamburger div:after{
+  .hamburger div:after {
     top: 10px;
   }
   .nav_bar_overlay_icons {
@@ -647,7 +680,8 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
     height: auto;
     color: white;
   }
-  .resume, .email{
+  .resume,
+  .email {
     position: relative;
     top: -2rem;
   }
@@ -664,7 +698,8 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   .hero_text_divThree {
     transform: translateX(10px);
   }
-  .about_container, .contact_container {
+  .about_container,
+  .contact_container {
     position: relative;
     top: -250px;
     display: block;
@@ -675,7 +710,10 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   .home_text {
     margin: 0;
   }
-  .about_container h1, .projects_container h1, .wireframes_container h1, .contact_container h1 {
+  .about_container h1,
+  .projects_container h1,
+  .wireframes_container h1,
+  .contact_container h1 {
     display: flex;
     flex-direction: column;
     font-size: 48px;
@@ -709,7 +747,8 @@ input[name='toggler']:checked ~ .hamburger > div:before, input[name='toggler']:c
   #project_overlay_button {
     display: none;
   }
-  #resume_overlay_button, #contact_overlay_button {
+  #resume_overlay_button,
+  #contact_overlay_button {
     position: relative;
     top: -50px;
   }
