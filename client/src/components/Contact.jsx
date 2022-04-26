@@ -20,7 +20,7 @@ class Contact extends React.Component {
     this.setState({
       sending: true
     });
-    Axios.post('https://linsanity.herokuapp.com/email', this.state)
+    Axios.post('https://linsanityemailapi.herokuapp.com/email', this.state)
     .then(res => {
       if (res.data.success) {
         this.setState({

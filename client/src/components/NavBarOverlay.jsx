@@ -34,7 +34,7 @@ const NavBarOverlay = () => {
               href='https://drive.google.com/file/d/1W5E6uqG60i_bN164qrFHgGwXyDdFy3f5/view?usp=sharing' target='blank'>
                 <FiFileText/>
               </a>
-              <a className='link' id='resume_overlay_button' href='https://drive.google.com/file/d/1lXiLRiMM9bwJUCOO0JeIOP0esQ9d8Ej7/view?usp=sharing' target='blank'>Resumé</a>
+              <a className='link' id='resume_overlay_button' href='https://drive.google.com/file/d/1W5E6uqG60i_bN164qrFHgGwXyDdFy3f5/view?usp=sharing' target='blank'>Resumé</a>
             </li>
             <li>
               <a className='nav_bar_overlay_icons email'
