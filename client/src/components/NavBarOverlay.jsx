@@ -4,7 +4,7 @@ import { AiOutlineLinkedin, AiFillHome } from 'react-icons/ai';
 import { FiGithub, FiBriefcase , FiFileText} from 'react-icons/fi';
 import { AiOutlineMail } from 'react-icons/ai';
 import { CgProfile } from 'react-icons/cg';
-import Pdfile from '../../dist/FrontEndRes.pdf';
+import Pdfile from '../../dist/JimmyLin.pdf';
 const NavBarOverlay = () => {
     return (
       <div className='menu_container' >
