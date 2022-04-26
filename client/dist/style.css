@@ -460,7 +460,7 @@ input[name="toggler"]:checked ~ .hamburger > div:after {
   font-weight: bold;
   margin-bottom: 2rem;
   background-color: var(--dblue2);
-  width: 4rem;
+  width: inherit;
 }
 .wireframe_style1_col-1 img {
   width: 25vw;
