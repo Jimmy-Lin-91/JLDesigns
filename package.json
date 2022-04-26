@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./server/index.js",
     "email": "node ./emailAPI/emailIndex.js",
-    "build": "webpack --watch"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
